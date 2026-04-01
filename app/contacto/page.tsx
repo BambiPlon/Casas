@@ -22,19 +22,19 @@ const offices = [
     city: "Cancún",
     address: "Av. Bonampak 123, Zona Hotelera",
     phone: "+52 998 123 4567",
-    image: "https://images.unsplash.com/photo-1552074284-5e88ef1aef18?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1510097467424-192d713fd8b2?w=600&q=80",
   },
   {
     city: "Tulum",
     address: "Av. Tulum 456, Centro",
     phone: "+52 984 987 6543",
-    image: "https://images.unsplash.com/photo-1548515301-0bddcc0e0b06?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1682687220742-aba19b51f36a?w=600&q=80",
   },
   {
     city: "Puerto Vallarta",
     address: "Paseo de la Marina 789",
     phone: "+52 322 555 1234",
-    image: "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=600&q=80",
   },
 ]
 
