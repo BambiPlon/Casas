@@ -80,7 +80,7 @@ export function PropertyModal({ property, isOpen, onClose }: PropertyModalProps)
 
       {/* Modal */}
       <div
-        className={`relative bg-card rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden transition-all duration-500 ${
+        className={`relative bg-card rounded-xl shadow-2xl max-w-6xl w-full max-h-[95vh] overflow-hidden transition-all duration-500 ${
           isAnimating ? "scale-100 translate-y-0" : "scale-95 translate-y-4"
         }`}
         onClick={(e) => e.stopPropagation()}
@@ -150,10 +150,10 @@ export function PropertyModal({ property, isOpen, onClose }: PropertyModalProps)
           </div>
 
           {/* Content */}
-          <div className="p-6 lg:p-8 overflow-y-auto max-h-[50vh] lg:max-h-[90vh]">
+          <div className="p-8 lg:p-10 overflow-y-auto max-h-[50vh] lg:max-h-[95vh]">
             <div className="space-y-6">
               <div>
-                <h2 className="font-serif text-2xl lg:text-3xl font-medium text-foreground mb-2">
+                <h2 className="font-serif text-3xl lg:text-4xl font-medium text-foreground mb-3">
                   {property.title}
                 </h2>
                 <div className="flex items-center gap-2 text-muted-foreground">
@@ -202,7 +202,7 @@ export function PropertyModal({ property, isOpen, onClose }: PropertyModalProps)
 
               <div className="pt-4">
                 <p className="text-sm text-muted-foreground mb-1">Precio</p>
-                <p className="font-serif text-3xl font-semibold text-primary">
+                <p className="font-serif text-4xl font-semibold text-primary">
                   {property.price}
                 </p>
               </div>
