@@ -38,12 +38,16 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" size="sm">
-              Iniciar Sesión
-            </Button>
-            <Button size="sm">
-              Agendar Cita
-            </Button>
+            <Link href="/login">
+              <Button variant="ghost" size="sm">
+                Iniciar Sesión
+              </Button>
+            </Link>
+            <Link href="/contacto">
+              <Button size="sm">
+                Agendar Cita
+              </Button>
+            </Link>
           </div>
 
           <button
@@ -70,12 +74,16 @@ export function Header() {
               </Link>
             ))}
             <div className="flex flex-col gap-2 pt-4 border-t border-border">
-              <Button variant="ghost" size="sm" className="justify-start">
-                Iniciar Sesión
-              </Button>
-              <Button size="sm">
-                Agendar Cita
-              </Button>
+              <Link href="/login" onClick={() => setIsMenuOpen(false)}>
+                <Button variant="ghost" size="sm" className="justify-start w-full">
+                  Iniciar Sesión
+                </Button>
+              </Link>
+              <Link href="/contacto" onClick={() => setIsMenuOpen(false)}>
+                <Button size="sm" className="w-full">
+                  Agendar Cita
+                </Button>
+              </Link>
             </div>
           </nav>
         </div>
