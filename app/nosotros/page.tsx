@@ -39,29 +39,6 @@ const values = [
   },
 ]
 
-const team = [
-  {
-    name: "María González",
-    role: "Directora General",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
-  },
-  {
-    name: "Carlos Ramírez",
-    role: "Director de Ventas",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
-  },
-  {
-    name: "Ana Martínez",
-    role: "Asesora Senior",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
-  },
-  {
-    name: "Roberto Silva",
-    role: "Asesor de Inversiones",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
-  },
-]
-
 export default function NosotrosPage() {
   return (
     <main className="min-h-screen">
@@ -173,42 +150,6 @@ export default function NosotrosPage() {
                   <p className="text-muted-foreground leading-relaxed">
                     {value.description}
                   </p>
-                </div>
-              </AnimatedItem>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="py-20 lg:py-32 bg-muted">
-        <div className="container mx-auto px-4 lg:px-8">
-          <AnimatedSection animation="fade-up" className="text-center mb-16">
-            <p className="text-sm font-medium tracking-widest text-primary uppercase mb-4">
-              Nuestro Equipo
-            </p>
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-normal text-foreground text-balance">
-              Conoce a los expertos
-            </h2>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <AnimatedItem key={member.name} index={index} baseDelay={100}>
-                <div className="group cursor-default">
-                  <div className="relative aspect-square rounded-lg overflow-hidden mb-4">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors duration-300" />
-                  </div>
-                  <h3 className="font-serif text-lg font-medium text-foreground group-hover:text-primary transition-colors duration-300">
-                    {member.name}
-                  </h3>
-                  <p className="text-muted-foreground text-sm">{member.role}</p>
                 </div>
               </AnimatedItem>
             ))}
