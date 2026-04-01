@@ -75,9 +75,9 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-sans, 'Inter'), 'Inter Fallback', system-ui, sans-serif;
-  --font-serif: var(--font-serif, 'Playfair Display'), 'Playfair Display Fallback', Georgia, serif;
-  --font-mono: var(--font-sans, 'Inter'), 'Inter Fallback', monospace;
+  --font-sans: var(--font-sans, 'Lato'), 'Lato Fallback', system-ui, sans-serif;
+  --font-serif: var(--font-serif, 'Cormorant Garamond'), 'Cormorant Garamond Fallback', Georgia, serif;
+  --font-mono: var(--font-sans, 'Lato'), 'Lato Fallback', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
